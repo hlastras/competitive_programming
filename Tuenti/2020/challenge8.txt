@@ -1,0 +1,7 @@
+The solution is simple:
+Download the image (this image has a brain and a phrase that are barely visible)
+Change image extension to .txt for example to open with a text editor
+In the las line, there is a strange line wit characteres . > < + - [ ] THIS IS BRAINFUCK LANGUAGE CODE
+Copy that line in a brainfuck interpeter like: https://copy.sh/brainfuck/
+
+And there is the code!
