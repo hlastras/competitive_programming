@@ -56,13 +56,10 @@ defmodule Slave do
   def init(parent) do
     {:ok, socket} = :gen_tcp.connect(@ip, @port, [:binary, active: false])
     schedule_tick()
-    IO.inspect("HOLA")
-
     {:ok, %__MODULE__{socket: socket, server_id: nil, siblings_ids: [], parent: parent, lines: [""]}}
   end
 
   def handle_info(:next_tick, %__MODULE__{socket: socket, lines: lines} = state) do
-    # do things
     {:ok, {line, rest_lines}} = read_line(socket, lines)
     new_state = Map.put(state, :lines, rest_lines)
     IO.inspect(line)
