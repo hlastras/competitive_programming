@@ -1,0 +1,5 @@
+opts = 
+{:ok, socket} = :gen_tcp.connect('52.49.91.111', 2092, [:binary, active: false])
+{:ok, data} = :gen_tcp.recv(socket, 0)
+{:ok, data} = :gen_tcp.recv(socket, 0)
+{:ok, data} = :gen_tcp.recv(socket, 0)
