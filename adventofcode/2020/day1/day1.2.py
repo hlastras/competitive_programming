@@ -5,7 +5,7 @@ all_numbers = list(map(int, sys.stdin.read().split()))
 pairs = set()
 for i in range(len(all_numbers)):
   for j in range(i+1, len(all_numbers)):
-    pairs.add(all_numbers[i]+all_numbers[j])
+    pairs.add(all_numbers[i] + all_numbers[j])
 
 numbers = []
 total = 1
