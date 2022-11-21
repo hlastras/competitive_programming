@@ -48,14 +48,4 @@ while any_move:
     
     count += 1
 
-    # if count in [1,2,3,4,5]:
-
-    #     for l in data:
-    #         print(''.join(l))
-
-    #     print("\n-------------\n")
-
-
-for l in data:
-    print(''.join(l))
 print(count)
